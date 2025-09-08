@@ -45,4 +45,8 @@
     },
     "date": "Date"
   }
+
+  // mongodb+srv://dvvsatyanarayana3628_db_user:<db_password>@cluster0.wq84z5z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+   pass : 12345@6 
 }
+
