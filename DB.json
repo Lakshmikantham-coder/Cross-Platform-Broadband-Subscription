@@ -1,0 +1,48 @@
+{
+  "user": {
+    "_id": "ObjectId",
+    "name": "String",
+    "email": "String (unique)",
+    "phone": "String",
+    "password": "String (hashed)",
+    "role": "String (customer | admin | analyst)",
+    "setabox_id": "ObjectId",
+    "plans": [
+      {
+        "plan_id": "ObjectId",
+        "recharge_date": "Date"
+      }
+    ],
+    "verified": "Boolean",
+    "createdAt": "Date"
+  },
+
+  "setabox": {
+    "_id": "ObjectId",
+    "type": "String (HD | SD)",
+    "name": "String",
+    "status": "String (active | inactive)"
+  },
+
+  "plan": {
+    "_id": "ObjectId",
+    "name": "String",
+    "price": "Number",
+    "validity_days": "Number",
+    "valid_data": "Number",
+    "speed": "String",
+    "description": "String",
+    "createdAt": "Date"
+  },
+
+  "usage": {
+    "_id": "ObjectId",
+    "user_id": "ObjectId",
+    "plan_id": "ObjectId",
+    "box_id": "ObjectId",
+    "usage_data": {
+      "data_used_gb": "Number"
+    },
+    "date": "Date"
+  }
+}
